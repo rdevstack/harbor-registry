@@ -165,7 +165,12 @@ If properly configured, [www.example.com](http://www.example.com/) will display 
     wget https://github.com/goharbor/harbor/releases/download/v2.1.1/harbor-offline-installer-v2.1.1.tgz.asc
     ```
 
-3. Verify that the package is genuine by running the following command.
+3. Obtain the public key for the `*.asc` file
+   ```
+   gpg --keyserver hkps://keyserver.ubuntu.com --receive-keys 644FF454C0B4115C
+   ```
+
+4. Verify that the package is genuine by running the following command.
 
     ```
     gpg -v --keyserver hkps://keyserver.ubuntu.com --verify harbor-offline-installer-v2.1.1.tgz.asc
@@ -189,7 +194,7 @@ If properly configured, [www.example.com](http://www.example.com/) will display 
 
     ```
     tar zxvf harbor-offline-installer-v2.1.1.tgz
-    ``letse`
+    ```
 
 # Generate certificate and keys
 
