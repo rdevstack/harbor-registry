@@ -229,7 +229,7 @@ To enable HTTPS on your website, you need to get a certificate (a type of file) 
     ```
 
 5. Run Certbot to get our certificate`-standalone` = tell Certbot to handle the challenge using its own built-in web server. `-preferred-challenges http` = option instructs Certbot to use port 80`d` flag is used to specify the domain you’re requesting a certificate for.
-
+**CHANGE example.com to YOUR DOMAIN**
     ```
     sudo certbot certonly --standalone --preferred-challenges http -d example.com
     ```
@@ -261,18 +261,19 @@ To enable HTTPS on your website, you need to get a certificate (a type of file) 
 
 # Configuring Harbor Application
 
-1. `cd harbor
-cp harbor.yml.tmpl harbor.yml`
+1. Navigate to harbor folder location and edit the harbor.yml file 
 
-    Edit harbor.yml
 
     ```
+    cd harbor
+    cp harbor.yml.tmpl harbor.yml
     sudo nano harbor.yml
     ```
 
-2. hostname: [example.com](http://example.com/)
-    1. certificate: /etc/letsencrypt/live/example.com/fullchain.pem
-    2. private_key: /etc/letsencrypt/live/example.com/privkey.pem
+2. Change the below details in harbor,yml file 
+    a) hostname: [example.com](http://example.com/)
+    b) certificate: /etc/letsencrypt/live/example.com/fullchain.pem
+    c) private_key: /etc/letsencrypt/live/example.com/privkey.pem
 
 # Install Harbor
 1. Run the below script in /harbor folder
