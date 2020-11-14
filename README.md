@@ -139,7 +139,7 @@ ref : [https://docs.docker.com/compose/install/](https://docs.docker.com/compose
     sudo systemctl start nginx
     sudo systemctl enable nginx
     sudo systemctl status nginx
-    ``nginx`
+    ```
 
 4. Get the public ip of the EC2 instance and map it to a domain
 
@@ -236,8 +236,11 @@ To enable HTTPS on your website, you need to get a certificate (a type of file) 
 
 6. If Successful, similar message will be displayed as the output
 
-    ````
-    IMPORTANT NOTES: - Congratulations! Your certificate and chain have been saved at: /etc/letsencrypt/live/example.com/fullchain.pem Your key file has been saved at: /etc/letsencrypt/live/example.com/privkey.pem Your cert will expire on 2021-02-11. To obtain a new or tweaked version of this certificate in the future, simply run certbot again. To non-interactively renew *all* of your certificates, run "certbot renew" - If you like Certbot, please consider supporting our work by: Donating to ISRG / Let's Encrypt: https://letsencrypt.org/donate Donating to EFF: https://eff.org/donate-le
+    ```
+    IMPORTANT NOTES: - Congratulations! Your certificate and chain have been saved at: /etc/letsencrypt/live/example.com/fullchain.pem Your key file has been
+    saved at: /etc/letsencrypt/live/example.com/privkey.pem Your cert will expire on 2021-02-11. To obtain a new or tweaked version of this certificate in the
+    future, simply run certbot again. To non-interactively renew *all* of your certificates, run "certbot renew" - If you like Certbot, please consider
+    supporting our work by: Donating to ISRG / Let's Encrypt: https://letsencrypt.org/donate Donating to EFF: https://eff.org/donate-le
     ```
 
 7. List the keys generated and verify
