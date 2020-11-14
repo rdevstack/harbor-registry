@@ -1,4 +1,4 @@
-#Harbor Registry
+# Harbor Registry
 
 
 Below Steps are for creating a harbor registry hosted on AWS EC2 instance.
@@ -301,7 +301,7 @@ To enable HTTPS on your website, you need to get a certificate (a type of file) 
     ✔ ----Harbor has been installed and started successfully.----
     ```
 
-2. Login to Harbor by browsing to [example.com](http://example.com/)
+2. Login to Harbor using your harbor domain configured [example.com](http://example.com/)
 
     ![harbor](images/harbor.png)
 
