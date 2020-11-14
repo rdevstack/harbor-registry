@@ -271,8 +271,11 @@ To enable HTTPS on your website, you need to get a certificate (a type of file) 
     ```
 
 2. Change the below details in harbor,yml file 
+
     a) hostname: [example.com](http://example.com/)
+    
     b) certificate: /etc/letsencrypt/live/example.com/fullchain.pem
+    
     c) private_key: /etc/letsencrypt/live/example.com/privkey.pem
 
 # Install Harbor
