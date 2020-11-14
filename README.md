@@ -7,8 +7,8 @@ Below Steps are for creating a harbor registry hosted on AWS EC2 instance.
   - [Hardware Prerequisites](#hardware-prerequisites)
     - [1. EC2 Instance](#1-ec2-instance)
   - [Software Prerequisites](#software-prerequisites)
-    - [1. Docker ( Version 17.06.0-ce+ or higher )](#1-docker--version-17060-ce-or-higher-)
-    - [2. Docker Compose ( Version 1.18.0 or higher )](#2-docker-compose--version-1180-or-higher-)
+    - [1. Docker ( Version 17.06.0-ce+ or higher )](#1-docker-installation--version-17060-ce-or-higher-)
+    - [2. Docker Compose ( Version 1.18.0 or higher )](#2-docker-compose-setup--version-1180-or-higher-)
     - [3. Domain Mapping](#3-domain-mapping)
 - [Download the Harbor Installer](#download-the-harbor-installer)
 - [Generate certificate and keys](#generate-certificate-and-keys)
@@ -37,7 +37,7 @@ The following table lists the software versions that must be installed on the ta
 
 ![Software-Spec](images/software.png)
 
-### 1. Docker ( Version 17.06.0-ce+ or higher )
+### 1. Docker Installation ( Version 17.06.0-ce+ or higher )
 
 ref : [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
@@ -93,7 +93,7 @@ Update the `apt` package index
     Docker version 19.03.13, build 4484c46d9d
     ```
 
-### 2. Docker Compose ( Version 1.18.0 or higher )
+### 2. Docker Compose Setup ( Version 1.18.0 or higher )
 
 ref : [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
