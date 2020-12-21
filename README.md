@@ -56,7 +56,8 @@ Update the `apt` package index
     ```
     sudo apt-get install \
     apt-transport-https \
-    ca-certificates \ curl \
+    ca-certificates \ 
+    curl \
     gnupg-agent \
     software-properties-common
     ```
